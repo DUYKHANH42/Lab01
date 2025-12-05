@@ -30,13 +30,7 @@ namespace Lab01
 
         protected void btnXoa_Click(object sender, ImageClickEventArgs e)
         {
-            for (int i = lstBanhDat.Items.Count - 1; i >= 0; i--)
-            {
-                if (lstBanhDat.Items[i].Selected)
-                {
-                    lstBanhDat.Items.RemoveAt(i);
-                }
-            }
+            lstBanhDat.Items.RemoveAt(lstBanhDat.SelectedIndex);
         }
 
         protected void BtnIn_Click(object sender, EventArgs e)
